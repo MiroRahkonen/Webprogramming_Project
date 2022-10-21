@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"
+      defer
+    ></script>
+    <script src="src/chart.js" defer></script>
+    <link rel="stylesheet" href="src/chartstyles.css" />
+    <title>Chart</title>
+  </head>
+  <body>
+    <div id="contents">
+      <a id="returnlink" href="index.html">Back to map</a>
+      <h1 id="headline"></h1>
+      <div id="chart"></div>
+      <div id="topbuttons">
+        <button id="disableall_button">Disable all</button>
+        <button id ="enableall_button">Enable all</button>
+      </div>
+      <div id="checkboxes">
+        <input type="checkbox" id="line_kok" class="labels" checked><label for="line_kok">KOK</label>
+        <input type="checkbox" id="line_sdp" class="labels" checked><label for="line_sdp">SDP</label>
+        <input type="checkbox" id="line_kesk" class="labels" checked><label for="line_kesk">KESK</label>
+       <input type="checkbox" id="line_vihr" class="labels" checked><label for="line_vihr">VIHR</label>
+        <br>
+        <input type="checkbox" id="line_ps" class="labels"checked><label for="line_ps" class="labels">PS</label>
+        <input type="checkbox" id="line_vas" class="labels" checked><label for="line_vas" class="labels">VAS</label>
+        <input type="checkbox" id="line_rkp" class="labels" checked><label for="line_rkp" class="labels">RKP</label>
+        <input type="checkbox" id="line_kd" class="labels" checked><label for="line_kd" class="labels">KD</label>
+        <br><br>
+        <input type="checkbox" id="show_datapoints" class="labels" ><label for="show_datapoints" class="labels">Show datapoint values</label>
+      </div>
+      <button id="update_button">Update</button>
+      <br>
+      <button id="download_button">Export chart</button>
+    </div>
+  </body>
+</html>
